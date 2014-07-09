@@ -1,0 +1,8 @@
+sample code:
+
+$groovyConsole&
+
+import groovy.json.*
+
+new JsonSlurper().parseText("http://ipad.api.thestreet.com/news/1/1.js".toURL().text).response.articles.collect{ return it.articleId}.join(",")
+
