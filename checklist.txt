@@ -3,4 +3,4 @@ example: println list*.size()
 
 2. array in groovy is actually arraylist
 
-3. 
+3. As a GDK goody, there are more to* methods to convert a string, such as toInteger, toLong, toFloat, and toDouble.
