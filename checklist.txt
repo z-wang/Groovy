@@ -9,4 +9,10 @@ example: println list*.size()
 
 5. In Groovy, single-quoted strings are instances of java.lang.String. Double-quoted strings are "interpolated"strings, known (unfortunately) as GStrings. 
 
-6. 
+6. greeting = 'Hello'
+greeting <<= ' Groovy'
+assert greeting instanceof java.lang.StringBuffer
+
+7. regex in the book groovy in action is skiped. should pick up once had time.
+
+8. 
