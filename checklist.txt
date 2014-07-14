@@ -4,3 +4,9 @@ example: println list*.size()
 2. array in groovy is actually arraylist
 
 3. As a GDK goody, there are more to* methods to convert a string, such as toInteger, toLong, toFloat, and toDouble.
+
+4. map in groovy is default as linkedhashmap, which has the fixed order in iteration.
+
+5. In Groovy, single-quoted strings are instances of java.lang.String. Double-quoted strings are "interpolated"strings, known (unfortunately) as GStrings. 
+
+6. 
