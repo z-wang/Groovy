@@ -15,4 +15,9 @@ assert greeting instanceof java.lang.StringBuffer
 
 7. regex in the book groovy in action is skiped. should pick up once had time.
 
-8. 
+8. Dots traverse from parent elements to children, and @ signs represent attribute values.
+def awayScore = boxscore.linescore[0].@away_team_runs
+
+9. The last expression in a closure is returned automatically.
+
+10. 
