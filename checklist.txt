@@ -21,3 +21,11 @@ def awayScore = boxscore.linescore[0].@away_team_runs
 9. The last expression in a closure is returned automatically.
 
 10. All Groovy exceptions are unchecked.
+
+11. JSR 223 The JSR allows you to call Groovy scripts using purely Java classes.
+
+12. run groovy in java: use groovyshell  GroovyShell shell = new GroovyShell(); Object result = shell.evaluate("3+4");
+
+13. use binding and groovy shell and see making java groovy p58
+
+14. 
