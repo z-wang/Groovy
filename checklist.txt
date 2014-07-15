@@ -20,4 +20,4 @@ def awayScore = boxscore.linescore[0].@away_team_runs
 
 9. The last expression in a closure is returned automatically.
 
-10. 
+10. All Groovy exceptions are unchecked.
