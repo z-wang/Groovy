@@ -28,4 +28,6 @@ def awayScore = boxscore.linescore[0].@away_team_runs
 
 13. use binding and groovy shell and see making java groovy p58
 
-14. 
+14. def willow = [name:'Willow',id:2] as Person   -> map-based constructor
+
+15. 
