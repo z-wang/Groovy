@@ -30,4 +30,16 @@ def awayScore = boxscore.linescore[0].@away_team_runs
 
 14. def willow = [name:'Willow',id:2] as Person   -> map-based constructor
 
-15. 
+15. assert ['x','a','z'].grep(myList) == ['a']
+
+16. list sort by closure: 
+list = list.sort { item -> item.size() }     --> by size
+list = list.sort { a,b -> a[0] <=> b[0] }    --> by first element
+
+17. new HashSet(x).toList()
+
+18. The GDK introduces two more convenience methods for lists: asImmutable and asSynchronized.
+
+19. 
+
+
