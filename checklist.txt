@@ -56,6 +56,17 @@ resourceHandler.handle { resource -> resource.doSomething() }
 21. Closure works well with a variety of interfaces, which has evolved over time: Runnables, Observers, Listeners, Visitors,
 Comparators, Strategies, Commands, Controllers, and so on.
 
-22.
+22. MethodClosureSample first = new MethodClosureSample (6)
+Closure firstClosure = first.&validate  //use a method to be a closure
+//class MethodClosureSample {
+    int limit
+    MethodClosureSample (int limit) {
+        this.limit = limit
+}
+    boolean validate (String value) {
+        return value.length() <= limit
+} }
+
+23. 
 
 
