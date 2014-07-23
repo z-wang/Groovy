@@ -40,6 +40,22 @@ list = list.sort { a,b -> a[0] <=> b[0] }    --> by first element
 
 18. The GDK introduces two more convenience methods for lists: asImmutable and asSynchronized.
 
-19. 
+19. new File('myfile.txt').eachLine { println it }
+
+20. inner class compare to closure:
+// Java
+   interface ResourceUser {
+void use(Resource resource) }
+resourceHandler.handle(new ResourceUser(){ public void use (Resource resource) {
+        resoutce.doSomething()
+￼} });
+
+//Groovy
+resourceHandler.handle { resource -> resource.doSomething() }
+
+21. Closure works well with a variety of interfaces, which has evolved over time: Runnables, Observers, Listeners, Visitors,
+Comparators, Strategies, Commands, Controllers, and so on.
+
+22.
 
 
