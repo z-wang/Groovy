@@ -1,0 +1,14 @@
+1. Mongo Plugin
+url: http://grails.org/plugin/mongodb
+compile mongodb and hibernate
+(1) create domain
+grails create-domain-class person pet
+//create a person domain and a pet domain
+
+(2) use mongod to start the service of mongodb
+./mongod -f ../etc/mongo.conf 
+
+(3) create controller
+grails create-contorller person pet
+
+(4) relation create,see the documentation 
