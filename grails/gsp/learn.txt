@@ -1,0 +1,59 @@
+1. different ways to communicate from front to end
+1.1 back end to front end
+(1) use controller method return model:
+class BookController {
+    def list() {
+
+        // do controller logic
+        // create model
+
+        return model
+    }
+}
+
+(2) use same way servlet to jsp
+request.setAttribute("b3",b2)
+        request.getRequestDispatcher("/show.gsp").forward(request,response)
+        
+(3) 
+
+1.2 front to back end
+(1) controller receive the values directly
+class BookController {
+    def find() {
+        def findBy = params.findBy
+        def appContext = request.foo
+        def loggedUser = session.logged_user
+    }
+}
+
+or
+
+class BookController {
+    def find() {
+        def findBy = params["findBy"]
+        def appContext = request["foo"]
+        def loggedUser = session["logged_user"]
+    }
+}
+
+(2) 
+
+
+
+
+1.3 redirect: from one controller to another
+redirect will not save request state, bean, etc...information but re-request through client to server
+url will be changed to a new one.
+
+def index() {
+        redirect(controller: "Test", action:"show", params:[v:value]) }
+  
+def show(){
+        def v2 = params.v }
+
+1.4 forward
+forward will save request state and other information, use getAttribute can have the beans
+url will not change
+
+forward(controller: "Test", action:"show", params:[v:value])
