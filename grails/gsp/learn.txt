@@ -1,3 +1,11 @@
+***********
+controller properties
+static defaultAction = "list"
+static scope = "singleton"
+static namespace = 'business'
+
+***********
+
 1. different ways to communicate from front to end
 1.1 back end to front end
 (1) use controller method return model:
