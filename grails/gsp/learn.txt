@@ -59,6 +59,8 @@ def index() {
   
 def show(){
         def v2 = params.v }
+        
+//redirect(url: "http://grails.org")
 
 1.4 forward
 forward will save request state and other information, use getAttribute can have the beans
