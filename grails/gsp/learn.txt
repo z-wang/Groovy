@@ -67,3 +67,13 @@ forward will save request state and other information, use getAttribute can have
 url will not change
 
 forward(controller: "Test", action:"show", params:[v:value])
+
+
+
+
+2. Data Bind
+
+
+3. Marshalling:
+3.1 Automatic JSON Marshalling
+
