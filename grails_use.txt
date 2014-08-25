@@ -12,3 +12,14 @@ grails create-domain-class person pet
 grails create-contorller person pet
 
 (4) relation create,see the documentation 
+
+(5) clear
+   10  ls -ltr
+   11  rm -fr renewal-mailer*
+   12  clear
+   13  ls -al
+   14  grails integrate-with --intellij
+   15  clear
+   16  open renewal-mailer.ipr 
+   
+   configure new project
